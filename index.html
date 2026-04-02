@@ -21,7 +21,6 @@
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased overflow-x-hidden">
 
-    <!-- Navigation -->
     <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-40">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
@@ -35,7 +34,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="about" class="hero-bg text-white pt-32 pb-24">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
             <div class="flex-1 space-y-6">
@@ -61,7 +59,6 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="py-20">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="mb-12">
@@ -71,11 +68,9 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Project 1: Bosch -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-gray-100 flex flex-col">
                     <div class="h-48 bg-gray-200 relative border-b border-gray-100">
-                        <!-- Points directly to the image you will upload to GitHub -->
-                        <img src="image_c70749.png" alt="Bosch Mass Casualty Ventilator" class="w-full h-full object-contain bg-white">
+                        <img src="images/VentilatorMainPic.png" alt="Bosch Mass Casualty Ventilator" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6 flex-1 flex flex-col">
                         <div class="text-xs font-bold tracking-wider text-blue-600 uppercase mb-2">BOSCH UK INDUSTRY-BASED PROJECT</div>
@@ -94,10 +89,9 @@
                     </div>
                 </div>
 
-                <!-- Project 2: Smart Campus -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-gray-100 flex flex-col">
                     <div class="h-48 bg-gray-200 relative">
-                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop" alt="Bridge Structure" class="w-full h-full object-cover">
+                        <img src="images/BridgeFinal.jpg" alt="Bridge Structure" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6 flex-1 flex flex-col">
                         <div class="text-xs font-bold tracking-wider text-blue-600 uppercase mb-2">Award: Best-in-Cohort</div>
@@ -116,10 +110,9 @@
                     </div>
                 </div>
 
-                <!-- Project 3: Sprint Trebuchet -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-gray-100 flex flex-col">
                     <div class="h-48 bg-gray-200 relative">
-                        <img src="https://images.unsplash.com/photo-1590494165264-1ebe3602eb80?q=80&w=800&auto=format&fit=crop" alt="Trebuchet Prototype" class="w-full h-full object-cover">
+                        <img src="images/TrebuchetAssembled.png" alt="Trebuchet Prototype" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6 flex-1 flex flex-col">
                         <div class="text-xs font-bold tracking-wider text-blue-600 uppercase mb-2">Rapid Prototyping Sprint</div>
@@ -142,7 +135,6 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience" class="py-20 bg-slate-50 border-t border-gray-200">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="mb-12">
@@ -151,7 +143,6 @@
             </div>
 
             <div class="space-y-8">
-                <!-- Experience 1: myBikeCloud -->
                 <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
                     <div class="flex flex-col md:flex-row justify-between md:items-center mb-6 border-b border-gray-100 pb-6">
                         <div>
@@ -166,7 +157,6 @@
                     </ul>
                 </div>
 
-                <!-- Experience 2: Thames Water -->
                 <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
                     <div class="flex flex-col md:flex-row justify-between md:items-center mb-6 border-b border-gray-100 pb-6">
                         <div>
@@ -184,15 +174,12 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-slate-900 text-slate-400 py-8 text-center">
         <p>&copy; 2026 Sanjeevan Das. All rights reserved.</p>
     </footer>
 
-    <!-- PROJECT GALLERY MODAL (Hidden by default) -->
     <div id="projectModal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-slate-900/80 backdrop-blur-sm p-4 sm:p-6 overflow-y-auto">
         <div id="modalContent" class="bg-white rounded-2xl w-full max-w-4xl my-auto relative shadow-2xl overflow-hidden">
-            <!-- Modal Header -->
             <div class="sticky top-0 bg-white/95 backdrop-blur z-10 border-b border-gray-100 px-6 py-4 flex justify-between items-center">
                 <h3 id="modalTitle" class="text-2xl font-bold text-slate-800">Project Title</h3>
                 <button onclick="closeModal()" class="text-gray-400 hover:text-red-500 transition-colors bg-gray-100 hover:bg-red-50 w-8 h-8 rounded-full flex items-center justify-center">
@@ -200,19 +187,15 @@
                 </button>
             </div>
             
-            <!-- Modal Body: Image Grid & Text -->
             <div class="p-6">
                 <p id="modalDescription" class="text-gray-600 mb-6 leading-relaxed">Project detailed description goes here.</p>
                 
-                <!-- The dynamic image grid -->
                 <div id="modalImageGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <!-- Images will be injected here via JavaScript -->
-                </div>
+                    </div>
             </div>
         </div>
     </div>
 
-    <!-- Scripts -->
     <script>
         // ==========================================
         // MODAL GALLERY LOGIC & DATA
@@ -223,28 +206,33 @@
                 title: "Bosch UK: Mass Casualty Ventilator",
                 description: "This project involved extensive 3D CAD modelling and physical rapid prototyping. We repurposed a high-speed circular saw motor, which presented significant vibration dampening challenges. We utilised Siemens NX to design a rigid housing structure and developed a C++/MATLAB feedback loop to ensure the piston actuated at safe medical intervals.",
                 images: [
-                    { url: "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?q=80&w=800", caption: "Siemens NX CAD Assembly" },
-                    { url: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=800", caption: "Physical 3D Printed Housing" },
-                    { url: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=800", caption: "Gearbox Mechanism" },
-                    { url: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800", caption: "MATLAB Sensor Feedback Data" }
+                    { url: "images/VentilatorMainPic.png", caption: "Ventilator Main Overview" },
+                    { url: "images/VentilatorAssembly.png", caption: "Siemens NX CAD Assembly" },
+                    { url: "images/VentilatorCasing.png", caption: "Physical Housing & Casing" },
+                    { url: "images/VentilatorSystemArch.png", caption: "System Architecture" },
+                    { url: "images/VentilatorRun.png", caption: "Active Ventilator Run" },
+                    { url: "images/VentilatorLatencyTest.png", caption: "Sensor Latency Test Data" },
+                    { url: "images/VentilatorHeatTest.png", caption: "Thermal & Heat Testing" },
+                    { url: "images/VentilatorWebApp.png", caption: "Web Application Interface" }
                 ]
             },
             'bridge': {
                 title: "Smart Campus: Load-Bearing Bridge",
                 description: "Awarded Best-in-Cohort. I directed the end-to-end design, FEA simulation, and physical stress testing. We implemented an inclusive design methodology (Pugh Matrices) and optimised for Design for Manufacture (DFM) using tab-and-slot geometry to prevent assembly errors.",
                 images: [
-                    { url: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800", caption: "Physical Stress Testing in the Workshop" },
-                    { url: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=800", caption: "FEA Heatmap showing Stress Concentrations" },
-                    { url: "https://images.unsplash.com/photo-1620325867502-221ddb5faa5f?q=80&w=800", caption: "Deflection Graph: Theoretical vs. Actual" }
+                    { url: "images/BridgeFinal.jpg", caption: "Final Bridge Structure" },
+                    { url: "images/BridgeAssembly.png", caption: "CAD Assembly & Design" },
+                    { url: "images/BridgeTesting.png", caption: "Physical Stress Testing in Workshop" }
                 ]
             },
             'trebuchet': {
                 title: "Rapid Prototyping: Sprint Trebuchet",
                 description: "A fast-paced, one-week agile design sprint. When a laser-cut component suffered a catastrophic material failure mid-sprint, I rapidly recalculated our trajectory models in Excel and directed the team to manually fabricate a wooden replacement, successfully hitting our target distance.",
                 images: [
-                    { url: "https://images.unsplash.com/photo-1590494165264-1ebe3602eb80?q=80&w=800", caption: "Completed Trebuchet Prototype" },
-                    { url: "https://images.unsplash.com/photo-1543286386-2e659306cd6c?q=80&w=800", caption: "Excel Trajectory Modelling" },
-                    { url: "https://images.unsplash.com/photo-1531685250784-afb348722081?q=80&w=800", caption: "Failed Component Analysis" }
+                    { url: "images/TrebuchetAssembled.png", caption: "Completed Trebuchet Prototype" },
+                    { url: "images/TrebuchetParts.png", caption: "Component Parts Overview" },
+                    { url: "images/TrebuchetSpring.png", caption: "Spring Mechanism Detail" },
+                    { url: "images/TrebuchetExcel.png", caption: "Excel Trajectory Modelling Data" }
                 ]
             }
         };
